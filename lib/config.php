@@ -5,3 +5,9 @@
 //pour interroger notre URL on utilise $_SERVER
 // on récupère le slug de notre page dans notre URL
     $currentPage = basename($_SERVER['SCRIPT_NAME']);
+//on fait le main menu
+    $mainMenu = [
+        'index.php' => 'Accueil',
+        'recettes.php' => 'Recettes',
+        'a_propos.php' => 'A propos'
+    ];

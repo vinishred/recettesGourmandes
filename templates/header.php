@@ -24,11 +24,11 @@
         </div>
 
         <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 nav-pills">
-          <li><a href="index.php" class="nav-link <?php if($currentPage === 'index.php') { echo 'active';} ?>">Accueil</a></li>
-          <li><a href="recettes.php" class="nav-link <?php if($currentPage === 'recettes.php') { echo 'active';} ?>">Recettes</a></li>
-          <li><a href="#" class="nav-link">Menus</a></li>
-          <li><a href="#" class="nav-link">FAQ</a></li>
-          <li><a href="#" class="nav-link">A propos</a></li>
+          <?php
+          foreach ($mainMenu as $key => $value) { ?>
+          <li><a href="<?= $key; ?>" class="nav-link <?php if($currentPage === $key) { echo 'active';} ?>"><?= $value; ?></a></li>
+          <?php } ?>
+          
         </ul>
 
         <div class="col-md-3 text-end">
