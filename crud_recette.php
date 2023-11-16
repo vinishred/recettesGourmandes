@@ -3,6 +3,7 @@ require_once 'templates/header.php';
 require_once 'lib/tools.php';
 require_once 'lib/recipe.php';
 //on crée une itération pour valider les données de notre formulaire
+//si notre utilisateur appuie sur le bouton saveRecipe on lance notre fonction requete
 if(isset($_POST['saveRecipe'])) {
   $test = saveRecipe($pdo, $_POST['category'], $_POST['title'], $_POST['description'],$_POST['ingredients'],$_POST['instructions'], null);
 }
