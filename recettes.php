@@ -1,8 +1,10 @@
-  <!-- header -->
-    <?php
-      require_once 'templates/header.php';
-      require_once 'lib/recipe.php';
-    ?>
+<!-- header -->
+<?php
+require_once 'templates/header.php';
+require_once 'lib/recipe.php';
+
+$recipes = getRecipesById($pdo);
+?>
 
   <!-- section main -->
   <div class="col-lg-6">

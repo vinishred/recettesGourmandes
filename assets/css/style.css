@@ -1,0 +1,8 @@
+.error-img {
+  display: flex;
+  justify-content: center;
+}
+
+.error-message {
+  text-align: center;
+}
