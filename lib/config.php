@@ -12,5 +12,5 @@
         'index.php' => 'Accueil',
         'recettes.php' => 'Recettes',
         'a_propos.php' => 'A propos',
-        'crud_recette.php' => 'Vos recettes'
+        'crud_recette.php' => 'Vos recettes',
     ];

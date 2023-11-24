@@ -18,6 +18,13 @@ $tempRecipe = [
   'category_id' => '',
 ];
 
+// on test si la session utilisateur est ouverte(si notre utilisateur est connecté)
+if(!isset($_SESSION['user'])) {
+  // si ce n'est pas le cas on le redirige vers la page login
+  $errors[] = 'Vous devez vous connecter pour ajouter une nouvelle recette';
+  header('location: login.php');
+}
+
 //on crée une itération pour valider les données de notre formulaire
 //si notre utilisateur appuie sur le bouton saveRecipe on lance notre fonction requete
 if(isset($_POST['saveRecipe'])) {
